@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="wrapper">
+    <header>
+      <h1><%= link_to('Time tracking tool', projects_path) %><br>⎯</h1>
+    </header>
 
-<%= yield %>
+    <%= yield %>
 
+    <footer>
+      Ironhack - Rails introduction
+    </footer>
+  </div>
 </body>
 </html>
